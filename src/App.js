@@ -30,6 +30,10 @@ function Steps() {
 
   return (
     <div>
+      <button className="close" onClick={() => setIsOpen((is) => !is)}>
+        &times;
+      </button>
+
       {isOpen && (
         <div className="steps">
           <div className="numbers">
